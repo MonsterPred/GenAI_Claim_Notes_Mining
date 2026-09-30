@@ -1,0 +1,158 @@
+{
+  "version": "1.0",
+  "categories": {
+    "FNOL_INTAKE": {
+      "description": "First notice of loss, initial call intake, file assignment and triage.",
+      "seeds": [
+        "insured called to report the accident first notice of loss",
+        "initial call intake reported collision at intersection",
+        "assigned file for priority investigation initial triage",
+        "claim assignment triage ambulance transfer from scene",
+        "insured called from scene to report collision with other vehicle"
+      ]
+    },
+    "COVERAGE_VERIFICATION": {
+      "description": "Policy status, declarations, endorsements, coverage affirmation or denial.",
+      "seeds": [
+        "policy confirmed active in good standing coverage affirmed",
+        "declaration page named insured endorsement exclusion",
+        "PIP MedPay rejected under statutory waiver form",
+        "coverage assessment policy limits bodily injury"
+      ]
+    },
+    "LIABILITY_INVESTIGATION": {
+      "description": "Recorded statements, police reports, witnesses, scene/reconstruction, fault allocation.",
+      "seeds": [
+        "recorded statement insured describes signal and intersection",
+        "police crash report received officer noted conflicting statements",
+        "independent witness statement observed claimant accelerate",
+        "accident reconstruction event data recorder speed at impact",
+        "comparative fault estimate liability disputed signal phase"
+      ]
+    },
+    "ATTORNEY_REPRESENTATION": {
+      "description": "Claimant retains counsel: letter of representation, attorney contact rules.",
+      "seeds": [
+        "received letter of representation from attorney representing claimant",
+        "attorney directs all communication cease with claimant directly",
+        "claimant retained counsel law firm representation"
+      ]
+    },
+    "MEDICAL_TREATMENT": {
+      "description": "Treatment, diagnostics, injections, therapy, MMI, medical records receipt.",
+      "seeds": [
+        "emergency room CT scan laceration suture discharged",
+        "MRI cervical spine disc bulge physical therapy prescribed",
+        "epidural steroid injection administered follow-up",
+        "claimant reached maximum medical improvement pain rating discharge"
+      ]
+    },
+    "MEDICAL_CAUSATION_REVIEW": {
+      "description": "Causation audits, pre-existing conditions, peer review, apportionment of injury.",
+      "seeds": [
+        "pre-existing degenerative disc disease rather than acute traumatic",
+        "peer review doctor opinion acute aggravation of pre-existing condition",
+        "causation audit records review chronic baseline condition",
+        "future surgery deemed unrelated to motor vehicle accident"
+      ]
+    },
+    "PRIOR_CLAIMS_ISO": {
+      "description": "ISO ClaimSearch hits, prior losses, prior injury history of claimant.",
+      "seeds": [
+        "ISO claimsearch identified prior claims same body region",
+        "prior workers compensation back claim settled with release",
+        "requested prior medical records from earlier loss"
+      ]
+    },
+    "RESERVE_CHANGE": {
+      "description": "Reserve establishment, increase, decrease, supervisor reserve approval.",
+      "seeds": [
+        "initial reserve established indemnity",
+        "reserve increased from to supervisor approval obtained",
+        "reserve evaluation adjusted bodily injury indemnity reserve"
+      ]
+    },
+    "PROPERTY_DAMAGE": {
+      "description": "Vehicle damage appraisal, total loss, ACV, salvage, towing.",
+      "seeds": [
+        "vehicle inspected appraisal total loss actual cash value",
+        "salvage value estimated structural damage",
+        "tow record vehicles non-drivable towing invoice"
+      ]
+    },
+    "DAMAGES_AUDIT": {
+      "description": "Wage loss / economic damages verification, medical bill repricing, letters of protection.",
+      "seeds": [
+        "employer wage audit verified base salary overtime",
+        "lost wages claimed audited amount variance",
+        "medical bill repricing billed versus allowed amount",
+        "letter of protection chargemaster pricing statutory cap"
+      ]
+    },
+    "LIEN_SUBROGATION": {
+      "description": "Health liens, ERISA, Medicare, subrogation against adverse carriers, recoveries.",
+      "seeds": [
+        "subrogation notice sent to adverse carrier comparative fault recovery",
+        "health insurance lien ERISA subrogation notice",
+        "Medicare query lien coordinator compromised lien payout",
+        "subrogation recovery payment posted to ledger"
+      ]
+    },
+    "DEMAND_NEGOTIATION": {
+      "description": "Settlement demands, offers, counteroffers, roundtable authority.",
+      "seeds": [
+        "formal demand package received policy limits demand deadline",
+        "extended counteroffer to attorney",
+        "roundtable committee set settlement range authorized offer",
+        "plaintiff counter demand negotiation"
+      ]
+    },
+    "EXTRACONTRACTUAL_EXPOSURE": {
+      "description": "Stowers / bad-faith / excess exposure analysis, advice letters on excess risk.",
+      "seeds": [
+        "Stowers demand within policy limits bad faith exposure",
+        "excess verdict exposure extracontractual liability",
+        "excess risk advice letter right to independent counsel"
+      ]
+    },
+    "INSURED_COMMUNICATION": {
+      "description": "Contact with the named insured: calls, reassurance, strategy explanation.",
+      "seeds": [
+        "insured called following receipt of letter reassured",
+        "explained defense strategy to insured insured agreed",
+        "teleconference with insured"
+      ]
+    },
+    "SETTLEMENT_RELEASE": {
+      "description": "Settlement agreement, release documents, payment issuance, disbursement.",
+      "seeds": [
+        "verbal settlement agreement reached global settlement",
+        "release documents sent notarized signature",
+        "executed release received check issued jointly payable"
+      ]
+    },
+    "FILE_CLOSURE": {
+      "description": "Closing summaries, reserve reconciliation, supervisory sign-off, file closure.",
+      "seeds": [
+        "closing adjuster summary recommend close file",
+        "final financial ledger reserve reconciliation",
+        "supervisory sign-off file closure approved"
+      ]
+    }
+  },
+  "dispute_types": ["none", "liability", "causation", "damages", "coverage", "lien", "bad_faith"],
+  "reason_codes": {
+    "L-10": "Liability disputed - conflicting party statements",
+    "L-14": "Comparative fault allocation contested",
+    "M-20": "Pre-existing condition / causation challenge",
+    "M-22": "Treatment reasonableness / necessity challenge",
+    "D-30": "Billed vs. reasonable medical specials",
+    "D-32": "Wage / economic loss overstated",
+    "A-40": "Attorney representation / LOP treatment",
+    "X-50": "Extracontractual / Stowers exposure",
+    "S-60": "Settlement / negotiation event",
+    "R-70": "Reserve adequacy change",
+    "P-80": "Property damage / total loss",
+    "N-00": "Routine / administrative"
+  }
+}
